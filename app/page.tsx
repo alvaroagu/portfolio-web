@@ -1,19 +1,24 @@
-import Image from "next/image";
+"use client";
+
+import { ExampleComponent } from "@/components/ExampleComponent";
 
 export default function Home() {
+  // Define los datos que quieres pasar al componente
+  const userData = {
+    username: "nombreUsuario",
+    email: "correo@ejemplo.com",
+    password: "miContraseñaSecreta", // En un proyecto real, nunca pasarías contraseñas así. Es solo para el ejemplo.
+  };
+
   return (
-    <div className="">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        This is the text in the main component
-      </main>
+    <div>
+      <h1>Bienvenido a mi aplicación</h1>
+      {/* Invoca tu componente y pasa las props */}
+      <ExampleComponent
+        username={userData.username}
+        email={userData.email}
+        password={userData.password}
+      />
     </div>
   );
 }
