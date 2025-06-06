@@ -7,7 +7,6 @@ export default function Home() {
   const userData = {
     username: "nombreUsuario",
     email: "correo@ejemplo.com",
-    password: "miContraseñaSecreta", // En un proyecto real, nunca pasarías contraseñas así. Es solo para el ejemplo.
   };
 
   return (
@@ -17,7 +16,6 @@ export default function Home() {
       <ExampleComponent
         username={userData.username}
         email={userData.email}
-        password={userData.password}
       />
     </div>
   );
