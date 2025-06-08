@@ -1,24 +1,16 @@
 "use client";
 
-import { ExampleComponent } from "@/components/ExampleComponent";
+import { Loader2 } from "lucide-react";
 
 export default function Home() {
-  // Define los datos que quieres pasar al componente
-  const userData = {
-    username: "nombreUsuario",
-    email: "correo@ejemplo.com",
-    password: "miContraseñaSecreta", // En un proyecto real, nunca pasarías contraseñas así. Es solo para el ejemplo.
-  };
-
   return (
-    <div>
-      <h1>Bienvenido a mi aplicación</h1>
-      {/* Invoca tu componente y pasa las props */}
-      <ExampleComponent
-        username={userData.username}
-        email={userData.email}
-        password={userData.password}
-      />
+    <div className="flex flex-col justify-center items-center min-h-screen">
+      <h1 className="text-2xl">Hellow World, Welcome to my webside</h1>
+      <p className="text-2xl">
+        This website is being built, please be patient.
+      </p>
+      <Loader2 className="size-24 animate-spin" />
+      <p className="text-2xl">by Alvaro Aguinagalde</p>
     </div>
   );
 }
