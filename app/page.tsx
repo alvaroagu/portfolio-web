@@ -1,5 +1,6 @@
 "use client";
 
+import { ProjectCard } from "@/components/cards/ProjectCard";
 import { ContentLayout } from "../components/layout/ContentLayout";
 
 export default function Home() {
@@ -16,6 +17,13 @@ export default function Home() {
               A passioante developer. Explore my projects and discover how my
               code brings ideas to life.
             </p>
+          </div>
+
+          <div className="p-2">
+            <ProjectCard
+              nameProject="project Name"
+              projectDescription="Project description"
+            />
           </div>
         </div>
       </ContentLayout>

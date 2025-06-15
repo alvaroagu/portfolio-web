@@ -58,7 +58,7 @@ const Navbar = ({ onCollapseChange, title }: NavbarProps) => {
       {/* Botón de menú hamburguesa para móvil */}
       <button
         className="fixed z-50 p-2 rounded-full shadow-lg transition-all
-          bg-indigo-600 text-white hover:bg-indigo-700
+          bg-black/50 text-white hover:bg-indigo-700
           lg:hidden
           top-4 left-4
           hover:scale-105"
@@ -131,7 +131,7 @@ const Navbar = ({ onCollapseChange, title }: NavbarProps) => {
 
       {/* Overlay para móvil */}
       <div
-        className={`fixed inset-0 bg-white bg-opacity-50 z-30 transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-teal-100 bg-opacity-50 z-30 transition-opacity duration-300 ${
           isMobileMenuOpen
             ? "opacity-100 lg:opacity-0 pointer-events-auto"
             : "opacity-0 pointer-events-none"
