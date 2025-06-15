@@ -13,10 +13,21 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const Navbar = () => {
+interface NavbarProps {
+  onCollapseChange?: (isCollapsed: boolean) => void;
+  title: string;
+}
+
+const Navbar = ({ onCollapseChange, title }: NavbarProps) => {
   const pathname = usePathname();
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleCollapse = () => {
+    const newState = !isCollapsed;
+    setIsCollapsed(newState);
+    onCollapseChange?.(newState);
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -35,7 +46,7 @@ const Navbar = () => {
           hidden lg:block
           top-4 left-4
           hover:scale-105"
-        onClick={() => setIsCollapsed(!isCollapsed)}
+        onClick={toggleCollapse}
       >
         {isCollapsed ? (
           <ChevronRight className="w-4 h-4" />
@@ -73,10 +84,10 @@ const Navbar = () => {
         <div className="p-4 h-full flex flex-col items-start overflow-hidden">
           {/* Título - oculto en modo colapsado */}
           <h2
-            className={`text-xl font-bold text-indigo-700 mb-8 pl-2 whitespace-nowrap 
+            className={`text-xl font-bold text-indigo-700 mb-8 pl-10 whitespace-nowrap
             ${isCollapsed ? "lg:opacity-0 lg:invisible" : "opacity-100"}`}
           >
-            Mi Portfolio
+            {title}
           </h2>
 
           {[
@@ -120,7 +131,7 @@ const Navbar = () => {
 
       {/* Overlay para móvil */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-50 z-30 transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-white bg-opacity-50 z-30 transition-opacity duration-300 ${
           isMobileMenuOpen
             ? "opacity-100 lg:opacity-0 pointer-events-auto"
             : "opacity-0 pointer-events-none"
