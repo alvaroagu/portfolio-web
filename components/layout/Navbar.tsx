@@ -131,7 +131,7 @@ const Navbar = ({ onCollapseChange, title }: NavbarProps) => {
 
       {/* Overlay para móvil */}
       <div
-        className={`fixed inset-0 bg-teal-100 bg-opacity-50 z-30 transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-black/75 bg-opacity-50 z-30 transition-opacity duration-300 ${
           isMobileMenuOpen
             ? "opacity-100 lg:opacity-0 pointer-events-auto"
             : "opacity-0 pointer-events-none"

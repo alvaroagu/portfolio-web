@@ -10,21 +10,22 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { ToolIcon } from "../misc/ToolIcon";
 
 interface ProjectCardProps {
-  nameProject: string;
+  projectName: string;
   projectDescription: string;
 }
 
 export function ProjectCard({
-  nameProject,
+  projectName,
   projectDescription,
 }: ProjectCardProps) {
   return (
     <>
-      <Card className="bg-white/50 ">
+      <Card className="bg-white/60">
         <CardHeader>
-          <CardTitle></CardTitle>
+          <CardTitle>{projectName}</CardTitle>
           <CardDescription></CardDescription>
           <CardAction></CardAction>
         </CardHeader>
@@ -34,11 +35,16 @@ export function ProjectCard({
             width={400}
             height={400}
             alt="Picture of the author"
+            className="rounded-md"
           />
         </CardContent>
         <p className="pl-6">{projectDescription}</p>
-        <CardFooter>
-          <p>Card Footer</p>
+        <CardFooter className=" flex flex-col justify-start items-start gap-2">
+          <p className="font-medium">Técnologias Utilizadas</p>
+          <div className="flex flex-row gap-4">
+            <ToolIcon toolName="C" toolIMG="logo-c.PNG" />
+            <ToolIcon toolName="Allegro" toolIMG="allegro.PNG" />
+          </div>
         </CardFooter>
       </Card>
     </>
