@@ -1,8 +1,8 @@
 "use client";
 
 import { Loader2 } from "lucide-react";
-import Navbar from "./layout/Navbar";
-import { ContentLayout } from "./layout/ContentLayout";
+import Navbar from "../components/layout/Navbar";
+import { ContentLayout } from "../components/layout/ContentLayout";
 
 export default function Home() {
   return (
