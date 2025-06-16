@@ -31,7 +31,9 @@ export function ProjectCard({
         </CardHeader>
         <CardContent>
           <Image
-            src="/test.png"
+            src={
+              "https://j5jdvm6kpv.ufs.sh/f/nv5F7fkTmFc7gFyPJqY08sZXTLORP15UD4QJjbNBpok9Y3SA"
+            }
             width={400}
             height={400}
             alt="Picture of the author"
