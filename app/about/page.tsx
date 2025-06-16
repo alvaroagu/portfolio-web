@@ -23,14 +23,14 @@ export default function About() {
 
             <div className="flex flex-col justify-center items-center lg:flex-1 lg:justify-start lg:items-start">
               <h1 className="text-xl text-center sm:text-2xl sm:font-medium lg:text-4xl lg:font-bold lg:pb-5">
-                Hi, I'm Alvaro, <br />
+                Hi, I&apos;m Alvaro, <br />
                 Software Developer
               </h1>
               <div className="flex flex-col">
                 <p className="text-sm text-center p-6 sm:text-lg  lg:text-start lg:p-0">
-                  I'm a web developer with over two years of experience building
-                  and optimizing robust and scalable web applications. My main
-                  focus is translating complex ideas into intuitive and
+                  I&apos;m a web developer with over two years of experience
+                  building and optimizing robust and scalable web applications.
+                  My main focus is translating complex ideas into intuitive and
                   functional user interfaces, ensuring an exceptional user
                   experience.
                 </p>

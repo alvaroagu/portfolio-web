@@ -10,7 +10,7 @@ export default function Home() {
         <div className="flex flex-col items-center min-h-screen p-0 text-black">
           <div className="pt-15 px-8">
             <h1 className="font-bold text-xl text-center sm:text-4xl">
-              Hey There!!! I'm <br />
+              Hey There!!! I&apos;m <br />
               Alvaro
             </h1>
             <p className="font-light text-md pt-5 sm:text-xl sm:font-light">

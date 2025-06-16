@@ -16,9 +16,9 @@ export default function Home() {
                 Software <br /> Developer
               </h1>
               <p>
-                Over the course of my programming journey, I've gained hands-on
-                experience with a variety of technologies. My core programming
-                skills include...
+                Over the course of my programming journey, I&apos;ve gained
+                hands-on experience with a variety of technologies. My core
+                programming skills include...
               </p>
               <div className="flex flex-col justify-center items-center">
                 <Button className="rounded-none w-30 py-5">Contact</Button>
