@@ -32,7 +32,7 @@ export function ProjectCard({
         <CardContent>
           <Image
             src={
-              "https://j5jdvm6kpv.ufs.sh/f/nv5F7fkTmFc7gFyPJqY08sZXTLORP15UD4QJjbNBpok9Y3SA"
+              "https://0q13aoua0x.ufs.sh/f/iFwLeXYUurfROgT0k8pbsT180JVWKvo3tjmFunZ2QgPRiMaE"
             }
             width={400}
             height={400}
