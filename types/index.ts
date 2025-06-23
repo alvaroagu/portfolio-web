@@ -4,4 +4,5 @@ export type Project = {
   description: string;
   languages: string;
   image: string;
+  languageImage: string;
 };

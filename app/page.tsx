@@ -3,18 +3,17 @@
 import { ProjectCard } from "@/components/cards/ProjectCard";
 import { ContentLayout } from "../components/layout/ContentLayout";
 import { useGetProjects } from "@/hooks/projects/useGetProjects";
-import { useEffect } from "react";
 
 export default function Home() {
   // Usa el hook para obtener los proyectos
   const { data: projects, isLoading, error } = useGetProjects();
 
   // Usa useEffect para loguear los datos una vez que estén disponibles
-  useEffect(() => {
-    if (!isLoading && !error && projects) {
-      console.log("Proyectos cargados:", projects);
-    }
-  }, [projects, isLoading, error]);
+  // useEffect(() => {
+  //   if (!isLoading && !error && projects) {
+  //     console.log("Proyectos cargados:", projects);
+  //   }
+  // }, [projects, isLoading, error]);
 
   // Muestra un estado de carga mientras se obtienen los datos
   if (isLoading) {
@@ -69,6 +68,10 @@ export default function Home() {
                 projectName={project.name}
                 projectDescription={project.description}
                 urlImage={project.image}
+                {...(project.languageImage && {
+                  languageImage: project.languageImage,
+                })}
+                {...(project.languages && { languages: project.languages })}
               />
             ))}
           </div>
