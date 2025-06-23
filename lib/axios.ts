@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://portfolio-backend-f74i.onrender.com/api",
+  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
   headers: {
     "Content-Type": "application/json",
     // "Authorization": "Bearer TU_TOKEN", // Si usas autenticación

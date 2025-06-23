@@ -21,7 +21,7 @@ export default function Projects() {
           <div className="grid grid-cols-1 gap-5 p-6 sm:grid-cols-2 md:grid-cols-3 sm:p-10">
             <ProjectCard
               projectName="Juego Monopolio"
-              projectDescription="Hemos desarrollado cada componente desde cero, desde el detallado tablero y las animaciones de los dados, con una interfaz gráfica intuitiva y efectos visuales creados con Allegro,"
+              projectDescription="Hemos desarrollado cada componente desde cero, desde el detallado tablero y las animaciones de los dados, con una interfaz gráfica intuitiva y efectos visuales creados con Allegro"
               urlImage="https://0q13aoua0x.ufs.sh/f/iFwLeXYUurfR9yavJlNBY2nv6x4tElPTjVoX87CJqNcu3w0L"
             />
             <ProjectCard

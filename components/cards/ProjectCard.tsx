@@ -43,7 +43,7 @@ export function ProjectCard({
           />
         </CardContent>
         <p className="p-6">{projectDescription}</p>
-        <CardFooter className=" flex flex-col justify-start items-start gap-2">
+        <CardFooter className=" flex flex-col justify-end items-start gap-2">
           <p className="font-medium">Técnologias Utilizadas</p>
           <div className="flex flex-row gap-4">
             <ToolIcon toolName="C" toolIMG="logo-c.PNG" />
