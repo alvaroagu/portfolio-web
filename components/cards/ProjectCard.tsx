@@ -11,7 +11,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { ToolIcon } from "../misc/ToolIcon";
-import { Languages } from "lucide-react";
 
 interface ProjectCardProps {
   projectName: string;
