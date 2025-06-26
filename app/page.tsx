@@ -5,24 +5,15 @@ import { ContentLayout } from "../components/layout/ContentLayout";
 import { useGetProjects } from "@/hooks/projects/useGetProjects";
 
 export default function Home() {
-  // Usa el hook para obtener los proyectos
   const { data: projects, isLoading, error } = useGetProjects();
 
-  // Usa useEffect para loguear los datos una vez que estén disponibles
-  // useEffect(() => {
-  //   if (!isLoading && !error && projects) {
-  //     console.log("Proyectos cargados:", projects);
-  //   }
-  // }, [projects, isLoading, error]);
-
-  // Muestra un estado de carga mientras se obtienen los datos
   if (isLoading) {
     return (
       <ContentLayout title="Home">
         <div className="flex flex-col items-center min-h-screen p-0 text-black">
           <div className="pt-15 px-8">
             <h1 className="font-bold text-xl text-center sm:text-4xl">
-              Cargando proyectos...
+              Cargando pagina...
             </h1>
           </div>
         </div>
